@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #c3b89e;
+    font-family: 'Raleway', sans-serif;
+  
+  }
+  
+  header{
+    position:relative;
+    
+}
+  
+  .back-video{
+    width: 100%;
+    height: 50%;
+    display: block;
+    margin: auto;
+    z-index: -1;
+    
+  }
+  
+  .title {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 30%;
+    left: 0px;
+    color:rgb(225, 219, 204);
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+
+  .button {
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    border-radius: 2px;
+    background-color: #dacbcb;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .form{
+    max-width: 400px;
+    padding: 40px;
+    flex: 1 0 50%; /* makes the two flex items eqaul in size*/
+    cursor: pointer;
+  }
+  
+  input{
+  
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 10px;
+  }
+  
+  .fox-breed{
+    color: rgb(211, 112, 36);
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(155, 155, 155);
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+
+  button{
+    padding: 15px 80px;
+    margin-top:30px;
+    border: 2px solid #363232;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family:'Raleway', sans-serif;
+    background-color: #a1826dc2; 
+    color:rgb(45, 43, 41);
+    cursor:pointer;
+  }
+  
+  button:hover{
+    background-color:#454647;
+  }
+  
+  .button-container{
+    text-align:center;
+  }
+  
+
+  
+  .accordion{
+    max-width: 400px;
+    padding: 40px;
+    flex: 1 0 50%;
+    cursor: pointer;
+  }
+  
+  .question-hidden{
+    font-size: 26px;
+    padding: 10px;
+    margin: 5px;
+    
+  }
+  
+  h2{
+    font-size: 20px;
+    text-align: center;
+   
+  }
+  
+  .answer {
+    display: none;
+    font-size: 20px;
+    margin-left:5px;
+  }
+  
+  .active + .answer {
+  display: block;
+  }
+  
+  @media (min-width:395px) and (max-width:767px){
+    .title{
+      font-size: 45px;
+      top: 35%;
+    }
+  }
+  
+  @media (min-width:768px) and (max-width:1023px){
+    .title{
+      font-size: 85px;
+      top: 30%;
+    }
+  }
+  
+  @media (min-width:1024px){
+    .title{
+      font-size: 100px;
+      top: 38%;
+    }
+  }

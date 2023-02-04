@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ponnyridning</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+  <header>
+     <video autoplay muted loop class="back-video">
+        <source src="./ponnyridning-cut.mp4" type="video/mp4">
+      </video>
+      <h1 class="title">Ponnyridning</h1>
+        <div class="center">
+            <button>Boka tid nu!</button>
+        </div>
+           
+  </header>
+
+<main>
+    
+  <section class="form">
+    <h2>Boka din ponny här!</h2>
+    <form action="http://httpbin.org/anything" method="post">
+    <label>
+    Name
+    <input type="text" name="name" required>
+    </label>
+
+    <label>
+    Phone number 
+    <input type="number" name="phone-number" required>   
+    </label>
+
+    <label>
+    Email adress
+    <input type="email" name="email" required>
+    </label>
+
+    <label for="fox-breed"> Choose what breed of fox you would like to buy: </label>
+    <select name="fox-breed" class="fox-breed">    
+      <option value="fennec-fox">Vit ponny</option>
+      <option value="red-fox">Brun ponny</option>
+      <option value="gray-fox">Svart ponny</option>   
+    </select>
+<br>
+    <label>
+    <button type="submit">Skicka</button>
+    </label>
+    </form>
+  </section>
+
+  <section class="accordion">
+    <h2>FAQ</h2>
+    <div class="faq-container"></div>
+
+    <div id="question-hidden1" class="question-hidden">Vad kostar det?</div>
+    <div class="answer"><p>500kr 1 h</p></div>
+
+    <div id="question-hidden2" class="question-hidden">Var finns ni??</div>
+    <div class="answer"><p>Stallgården 1</p></div>
+
+    <div id="question-hidden3" class="question-hidden">Hur länge får man rida?</div>
+    <div class="answer"><p>1 h</p></div>
+
+    <div id="question-hidden4" class="question-hidden">Hur avbokar man?</div>
+    <div class="answer"> <p>Tel nr 12345</p></div>
+
+  </section>
+</main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
