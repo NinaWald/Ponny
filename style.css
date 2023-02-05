@@ -33,6 +33,7 @@ body{
     left: 0px;
     color:rgb(225, 219, 204);
     font-size: 30px;
+    -webkit-text-stroke: 1px black;
     width: 100%;
     text-align: center;
     padding: 20px;
@@ -79,7 +80,7 @@ body{
     border-radius: 10px;
   }
   
-  .fox-breed{
+  .breed{
     color: rgb(211, 112, 36);
     background: #fff;
     padding: 10px;
